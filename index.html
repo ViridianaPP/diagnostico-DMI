@@ -4,60 +4,89 @@
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
+    <title>Productos</title>
     <link rel='stylesheet' href='css/bootstrap.min.css'>
+    <link rel='stylesheet' href='css/styles.css'>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom border-dark">
-        <a class="navbar-brand" href="#">Brand</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio <span class="sr-only"></span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Productos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Nosotros</a>
-                </li>
+    <main class="container py-4">
+        <nav class="navbar navbar-expand bg-white border rounded px-3 py-2 mb-4">
+            <a class="navbar-brand fw-semibold mb-0" href="#">Brand</a>
+            <ul class="navbar-nav flex-row ms-3 gap-3 small">
+                <li class="nav-item"><a class="nav-link px-0" href="#">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link px-0 active fw-semibold" href="#">Productos</a></li>
+                <li class="nav-item"><a class="nav-link px-0" href="#">Nosotros</a></li>
             </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <button class="btn my-2 my-sm-0" type="submit">
-                    <img src="icons/shopping-cart.svg" alt="Carrito de compras" width="30" height="30">
-                </button>
-            </form>
-        </div>
-    </nav>
+            <button class="btn btn-sm ms-auto p-0 border-0" type="button" aria-label="Carrito de compras">
+                <img src="icons/shopping-cart.svg" alt="Carrito" width="18" height="18">
+            </button>
+        </nav>
 
-    <h1>Nuestros productos</h1>
-    <div class="row">
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+        <div class="mb-3">
+            <h1 class="h3 mb-0">Nuestros productos</h1>
+        </div>
+
+        <div class="row g-2 mb-3 align-items-center">
+            <div class="col">
+                <input type="text" class="form-control form-control-sm" placeholder="Buscar producto..." aria-label="Buscar producto">
+            </div>
+            <div class="col-auto">
+                <button type="button" class="btn btn-sm btn-light border">Filtrar</button>
             </div>
         </div>
-        <div class="col-sm-6">
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+
+        <div class="row row-cols-2 g-3 mb-4">
+            <div class="col">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <img src="img/producto1" alt="Aud&iacute;fonos inal&aacute;mbricos" class="img-fluid border rounded product-image mb-3" width="220" height="140">
+                        <h2 class="h5 mb-1">Aud&iacute;fonos inal&aacute;mbricos</h2>
+                        <p class="text-warning small mb-1">$59.99</p>
+                        <p class="small text-warning mb-0">★★★★★</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <img src="img/producto2" alt="Smartwatch Pro" class="img-fluid border rounded product-image mb-3" width="220" height="140">
+                        <h2 class="h5 mb-1">Smartwatch Pro</h2>
+                        <p class="text-warning small mb-1">$89.99</p>
+                        <p class="small text-warning mb-0">★★★★★</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <img src="img/producto3" alt="C&aacute;mara digital" class="img-fluid border rounded product-image mb-3" width="220" height="140">
+                        <h2 class="h5 mb-1">C&aacute;mara digital</h2>
+                        <p class="text-warning small mb-1">$199.99</p>
+                        <p class="small text-warning mb-0">★★★★★</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col">
+                <article class="card h-100">
+                    <div class="card-body">
+                        <img src="img/producto4" alt="Mochila urbana" class="img-fluid border rounded product-image mb-3" width="220" height="140">
+                        <h2 class="h5 mb-1">Mochila urbana</h2>
+                        <p class="text-warning small mb-1">$39.99</p>
+                        <p class="small text-warning mb-0">★★★★★</p>
+                    </div>
+                </article>
             </div>
         </div>
-    </div>
+
+        <nav aria-label="Paginaci&oacute;n de productos">
+            <ul class="pagination pagination-sm justify-content-center mb-0">
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul>
+        </nav>
+    </main>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
